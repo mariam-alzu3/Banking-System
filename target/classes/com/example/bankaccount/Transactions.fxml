@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="531.0" fitWidth="728.0" opacity="0.63" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Tbackground.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" layoutX="35.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="663.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3515439429928741">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8552631735801697" green="0.3999147117137909" blue="0.3999147117137909" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c95151" height="70.0" layoutX="50.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" width="74.0" />
+      <Label alignment="CENTER" layoutX="49.0" layoutY="41.0" prefHeight="72.0" prefWidth="76.0" text="MB">
+         <font>
+            <Font name="Impact" size="35.0" />
+         </font>
+      </Label>
+      <TableView fx:id="transactionsTable" layoutX="67.0" layoutY="131.0" prefHeight="334.0" prefWidth="610.0">
+        <columns>
+          <TableColumn fx:id="dateCol" prefWidth="184.38552856445312" text="Date" />
+          <TableColumn fx:id="refNumCol" prefWidth="97.73934936523438" text="Reference #" />
+            <TableColumn fx:id="typeCol" prefWidth="131.76065063476562" text="Type" />
+            <TableColumn fx:id="amountCol" prefWidth="195.48959350585938" text="Amount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
